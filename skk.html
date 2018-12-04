@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        html {
+            font-size: calc(100/370*100vw)
+        }
+
+        @media screen and (min-width:750px) {
+            html {
+                font-size: 100px;
+            }
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            box-sizing: border-box;
+            font-size: .16rem;
+        }
+
+        html,
+        body,
+        .wrap {
+            height: 100%;
+        }
+
+        .wrap {
+            display: flex;
+            flex-direction: column;
+            background: #f1f1f1;
+
+        }
+
+        header {
+            display: flex;
+            line-height: .55rem;
+            padding: 0 .18rem;
+            justify-content: space-around;
+            margin-bottom: .1rem;
+            background: #fff;
+        }
+
+        header span {
+            border-bottom: .03rem solid blue;
+        }
+
+        section {
+            flex: 1;
+            background: #fff;
+            overflow: hidden;
+        }
+
+
+        .list li {
+            padding: 0 .2rem;
+            margin: .2rem 0;
+        }
+
+        .list li:nth-of-type(even) .top {
+            background: #5686f4;
+        }
+
+        .list li:nth-of-type(even)>p {
+            background-image: url(images/b1.gif)
+        }
+
+        .list li .top {
+            display: flex;
+            background: #fd6060;
+            line-height: .6rem;
+            border-radius: .08rem .08rem 0 0;
+            color: #fff;
+            justify-content: space-between;
+            padding: 0 .2rem;
+        }
+
+        .list li>p {
+            height: 4px;
+            background: url(images/border.gif)
+        }
+
+        .left {
+            display: flex;
+        }
+
+        .top span {
+            font-size: .32rem;
+            line-height: .3rem;
+        }
+
+        .top b {
+            font-size: .54rem;
+        }
+
+        .bot {
+            box-shadow: 0 0 .06rem #ccc inset;
+            border-radius: 0 0 .08rem .08rem;
+            padding: .04rem 0;
+        }
+
+        .bot p {
+            font-size: .12rem;
+            text-indent: .15rem;
+            line-height: .24rem;
+        }
+
+        .bot p:first-child {
+            color: limegreen;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <span>未使用</span>
+            <span>已使用</span>
+            <span>已过期</span>
+        </header>
+        <section>
+            <ul class="list">
+                <li>
+                    <div class="top">
+                        <div class="left">
+                            <span>￥</span>
+                            <b>5</b>
+                        </div>
+
+                        <div class="right">
+                            满减卷
+                        </div>
+                    </div>
+                    <p></p>
+                    <div class="bot">
+                        <p>使用门槛:1.满1000元即可使用;本卷适用于推荐项目</p>
+                        <p>使用时间:1.即日起至2019年2月</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="top">
+                        <div class="left">
+                            <span>￥</span>
+                            <b>5</b>
+                        </div>
+
+                        <div class="right">
+                            满减卷
+                        </div>
+                    </div>
+                    <p></p>
+                    <div class="bot">
+                        <p>使用门槛:1.满1000元即可使用;本卷适用于推荐项目</p>
+                        <p>使用时间:1.即日起至2019年2月</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="top">
+                        <div class="left">
+                            <span>￥</span>
+                            <b>5</b>
+                        </div>
+
+                        <div class="right">
+                            满减卷
+                        </div>
+                    </div>
+                    <p></p>
+                    <div class="bot">
+                        <p>使用门槛:1.满1000元即可使用;本卷适用于推荐项目</p>
+                        <p>使用时间:1.即日起至2019年2月</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="top">
+                        <div class="left">
+                            <span>￥</span>
+                            <b>5</b>
+                        </div>
+
+                        <div class="right">
+                            满减卷
+                        </div>
+                    </div>
+                    <p></p>
+                    <div class="bot">
+                        <p>使用门槛:1.满1000元即可使用;本卷适用于推荐项目</p>
+                        <p>使用时间:1.即日起至2019年2月</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="top">
+                        <div class="left">
+                            <span>￥</span>
+                            <b>5</b>
+                        </div>
+
+                        <div class="right">
+                            满减卷
+                        </div>
+                    </div>
+                    <p></p>
+                    <div class="bot">
+                        <p>使用门槛:1.满1000元即可使用;本卷适用于推荐项目</p>
+                        <p>使用时间:1.即日起至2019年2月</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="top">
+                        <div class="left">
+                            <span>￥</span>
+                            <b>5</b>
+                        </div>
+
+                        <div class="right">
+                            满减卷
+                        </div>
+                    </div>
+                    <p></p>
+                    <div class="bot">
+                        <p>使用门槛:1.满1000元即可使用;本卷适用于推荐项目</p>
+                        <p>使用时间:1.即日起至2019年2月</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="top">
+                        <div class="left">
+                            <span>￥</span>
+                            <b>5</b>
+                        </div>
+
+                        <div class="right">
+                            满减卷
+                        </div>
+                    </div>
+                    <p></p>
+                    <div class="bot">
+                        <p>使用门槛:1.满1000元即可使用;本卷适用于推荐项目</p>
+                        <p>使用时间:1.即日起至2019年2月</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="top">
+                        <div class="left">
+                            <span>￥</span>
+                            <b>5</b>
+                        </div>
+
+                        <div class="right">
+                            满减卷
+                        </div>
+                    </div>
+                    <p></p>
+                    <div class="bot">
+                        <p>使用门槛:1.满1000元即可使用;本卷适用于推荐项目</p>
+                        <p>使用时间:1.即日起至2019年2月</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="top">
+                        <div class="left">
+                            <span>￥</span>
+                            <b>5</b>
+                        </div>
+
+                        <div class="right">
+                            满减卷
+                        </div>
+                    </div>
+                    <p></p>
+                    <div class="bot">
+                        <p>使用门槛:1.满1000元即可使用;本卷适用于推荐项目</p>
+                        <p>使用时间:1.即日起至2019年2月</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </div>
+</body>
+
+</html>
