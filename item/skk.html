@@ -48,7 +48,7 @@
         }
 
         header span {
-            border-bottom: .03rem solid blue;
+            border-bottom: .03rem solid transparent;
         }
 
         section {
@@ -115,13 +115,18 @@
             color: limegreen;
 
         }
+
+        .cur {
+            color: #5686f4;
+            border-color: #5686f4;
+        }
     </style>
 </head>
 
 <body>
     <div class="wrap">
         <header>
-            <span>未使用</span>
+            <span class="cur">未使用</span>
             <span>已使用</span>
             <span>已过期</span>
         </header>
@@ -282,6 +287,7 @@
                 </li>
             </ul>
         </section>
+        <script src="skk.js"></script>
     </div>
 </body>
 
