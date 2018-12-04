@@ -6,3 +6,10 @@ document.querySelector("header").addEventListener("click", function (e) {
         e.target.classList.add("cur")
     }
 })
+
+let scroll = new BScroll('section', {
+    scrollY: true,
+    click: true,
+    eventPassthrough: "horizontal"
+
+})
